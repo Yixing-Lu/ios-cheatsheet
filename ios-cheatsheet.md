@@ -304,3 +304,72 @@ requestWhenInUseAuthorization
 requestLocation
 
 stopUpdatingLocation
+
+
+
+# Section 15: Firebase, Tableview, Cocoapod
+
+**Navigation Controller**:
+
+Select land page, editor, embedded in, navgation
+
+navigationController?.popToRootViewController
+
+navigationItem.hidesBackButton
+
+**Loops**
+
+for i in "123" {}
+
+while true {}
+
+**Cocopods**
+
+pod init
+
+pod install
+
+**Firebase**
+
+**Static Constants**
+
+static let registerSegue = "RegisterToChat"
+
+Constants.registerSegue: do not need to instance
+
+**Table Views**
+
+extension ChatViewController: UITableViewDataSource
+
+UITableViewDataSource: tell how many rows and return cell
+
+cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
+
+UITableViewDelegate: interact with the app
+
+Custom UI
+
+**Type casting**
+
+is -> if human is Animal {} -> type checking
+
+as! -> let fish = animal as! Fish -> forced downcast to subclass
+
+as? -> if let fish = animals[1] as? Fish {}
+
+as -> let animalFish = fish as Animal -> upcast to superclass
+
+**Firebase**
+
+getDocuments
+
+addSnapshotListener: listen for update
+
+Order: 
+
+update UI in closure:  DispatchQueue.main.async {self.messageTextfield.text = ""}
+
+**ViewController Lifecycle**
+
+viewDidLoad() -> viewWillAppear() -> viewDidAppear() -> viewWillDisapper() -> viewDidDisappear()
+
